@@ -1,12 +1,8 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .content {
   margin:2em;
 }
 
-.cards {
+.Card {
   text-align: left;
   margin:0.5em;
 
@@ -18,11 +14,16 @@ body {
 
 .banner {
   background-size:cover;
+  background-color: #444444;
 }
 
 .caption {
   background: white;
   overflow: hidden;
+}
+
+.title {
+  font-weight: 400;
 }
 
 .explore_wrapper {
@@ -40,8 +41,8 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 529px) {
-  .cards {
+@media only screen and (max-width: 599px) {
+  .Card {
     width: calc(100% - 1em);
     height:13.5em;
   }
@@ -65,16 +66,16 @@ body {
     width:calc(100% - 2.5em);
   }
 
-  h4 {
+  .title {
     font-size:17pt;
   }
-  p {
+  .summary {
     font-size: 11pt;
   }
 }
 
-@media only screen and (min-width: 530px) {
-  .cards {
+@media only screen and (min-width: 600px) {
+  .Card {
     width: calc(50% - 1em);
     height:21em;
   }
@@ -95,14 +96,14 @@ body {
   }
 }
 
-@media only screen and (min-width: 830px) {
-  .cards {
+@media only screen and (min-width: 1080px) {
+  .Card {
     width: calc(33.3333% - 1em);
   }
 }
 
-@media only screen and (min-width: 1130px) {
-  .cards {
+@media only screen and (min-width: 1380px) {
+  .Card {
     width: calc(25% - 1em);
   }
 }

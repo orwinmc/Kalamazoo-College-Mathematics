@@ -4,9 +4,10 @@ import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 // CSS
-import './App.css'
-// Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
+// Custom Components
 import Home from './components/Home/Home'
 import Layout from './components/Layout/Layout'
 import Calendar from './components/Calendar/Calendar'

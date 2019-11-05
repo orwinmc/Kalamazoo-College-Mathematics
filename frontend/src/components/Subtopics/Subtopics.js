@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 import './test.css';
-//test
+
 class Subtopics extends Component {
   constructor(props) {
     super(props)

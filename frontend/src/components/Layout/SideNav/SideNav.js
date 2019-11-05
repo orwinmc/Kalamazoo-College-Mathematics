@@ -50,7 +50,7 @@ const options = {
 
 const SideNav = () => {
   return (
-    <Media queries={{ small: { maxWidth: "700px" } }}>
+    <Media queries={{ small: { maxWidth: "780px" } }}>
       {matches =>
         matches.small ? (
           <nav className="SideNav">
