@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import './Topics.css';
 import Card from './Card/Card';
+import Form from 'react-bootstrap/Form';
 
 class Topics extends Component {
   constructor(props) {
@@ -24,16 +25,18 @@ class Topics extends Component {
 
   render() {
     const topic_cards = this.state.topics.map((topic, index) => {
-      
-
 
       return (
-        <Card key={topic.id} image={topic.image} name={topic.name} summary={topic.summary}/>
+        <Card key={topic.id} id={topic.id} image={topic.image} name={topic.name} summary={topic.summary}/>
       );
     })
 
     return (
       <div className="Topics">
+        <h1>All Topics</h1>
+        <br />
+        <Form.Control size="lg" type="text" placeholder="Search for a Topic" />
+        <br />
         {topic_cards}
       </div>
     );
