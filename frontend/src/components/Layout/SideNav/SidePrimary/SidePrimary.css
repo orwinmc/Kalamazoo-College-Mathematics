@@ -1,0 +1,23 @@
+.SidePrimary:hover {
+  color:#007bff;
+  text-decoration: none;
+}
+
+.SidePrimary {
+  color:rgba(0, 0, 0, 0.75);
+  background-color: white;
+  //color:white;
+  //background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-align: left;
+  padding:8px 16px 8px 16px;
+  display:block;
+  width:250px;
+
+  //transition-timing-function: ease-out;
+  //transition-duration: 0.5s;
+}
+
+.SidePrimary:focus {
+  outline:none;
+}

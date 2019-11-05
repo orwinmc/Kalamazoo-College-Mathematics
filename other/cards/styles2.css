@@ -1,0 +1,24 @@
+.banner {
+  filter: none;
+  color:white;
+  height:150px;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+.bannerBackground {
+  background-image:url('mandelbrot.jpg');
+  background-size:cover;
+  height:220px;
+  width:100%;
+  position:absolute;
+  z-index: -1;
+}
+
+.content {
+  top:300px;
+  min-height: 100px;
+  background: white;
+  z-index: 1;
+  padding:1em;
+}

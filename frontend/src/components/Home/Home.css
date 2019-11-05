@@ -1,0 +1,16 @@
+#headline {
+  color:white;
+  text-align: center;
+  background-image: url("kzoo_overhead_copy.jpg");
+  background-size: cover;
+  height:550px;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+}
+
+#author {
+font-weight: 300;
+}
+
+#quote {
+  font-weight: 300;
+}

@@ -1,0 +1,6 @@
+.HeadNav {
+  position:fixed;
+  width:100%;
+  background-color: #FF6607;
+  z-index: 3;
+}

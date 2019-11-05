@@ -1,0 +1,22 @@
+.SideNav{
+  width: 250px;
+  height:calc(100vh - 56px);
+
+  //transition: ease all .5s;
+
+  top:56px;
+  left:0px;
+  position:fixed;
+  overflow: scroll;
+  display: block;
+  //background-color: rgba(0, 20, 60, 255);
+  //border-right: 1px solid rgba(0, 0, 0, .125);
+  //box-shadow: 2px 0px 10px rgba(0,0,0,0.1);
+  //z-index:2;
+}
+
+@media only screen and (max-width: 700px) {
+  .SideNav {
+    //width: 50px;
+  }
+}
