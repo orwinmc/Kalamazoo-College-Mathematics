@@ -1,8 +1,11 @@
 body {
-  margin: 1em;
   font-family: "Roboto", sans-serif;
   //display: flex;
   //flex-wrap: wrap;
+}
+
+.content {
+  margin:2em;
 }
 
 .extra {
@@ -24,18 +27,22 @@ body {
   float:left;
 }
 
+.banner {
+  background-size:cover;
+}
+
 @media only screen and (max-width: 529px) {
   .cards {
     width: calc(100% - 1em);
     height:13.5em;
   }
 
-  .tophalf {
+  .banner {
     width:2.5em;
     height:100%;
     float:left;
   }
-  .textportion {
+  .caption {
     width:100%;
     height:8.1em;
     width:calc(100% - 2.5em);
@@ -43,7 +50,7 @@ body {
     float:left;
   }
 
-  .bottomhalf {
+  .explore_wrapper {
     padding: 1.5em 1.5em 1em 1.5em;
     float:left;
     width:calc(100% - 2.5em);
@@ -63,17 +70,17 @@ body {
     height:21em;
   }
 
-  .tophalf {
+  .banner {
     height:5em;
     width:100%;
   }
 
-  .textportion {
+  .caption {
     height:10.25em;
     padding:1.75em 1.5em 0em 1.5em;
   }
 
-  .bottomhalf {
+  .explore_wrapper {
     width:100%;
     padding: 1.5em 1.5em 1.5em 1.5em;
   }
@@ -91,12 +98,12 @@ body {
   }
 }
 
-.textportion {
+.caption {
   background: white;
   overflow: hidden;
 }
 
-.bottomhalf {
+.explore_wrapper {
   height:5.75em;
   background: white;
 }
