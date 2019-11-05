@@ -1,28 +1,43 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import './Topics.css';
-import Button from 'react-bootstrap/Button';
+import Card from './Card/Card';
 
-const Topics = () => {
-  return (
-    <div className="Topics">
-      <div className="cards">
-        <h4>Complex and Vector Variables</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <Button>Resources</Button> <Button>Problems</Button>
+class Topics extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      topics: []
+    }
+  }
+
+  async componentDidMount() {
+    const all_topics_url = 'http://localhost:5000/topics';
+    const all_topics_res = await fetch(all_topics_url, { credentials: 'include', method: 'GET' })
+    const all_topics_data = await all_topics_res.json();
+
+    this.setState({
+      topics: all_topics_data
+    })
+  }
+
+  render() {
+    const topic_cards = this.state.topics.map((topic, index) => {
+      
+
+
+      return (
+        <Card key={topic.id} image={topic.image} name={topic.name} summary={topic.summary}/>
+      );
+    })
+
+    return (
+      <div className="Topics">
+        {topic_cards}
       </div>
-      <br />
-      <div className="cards">
-        <h3>Calculus 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <br />
-      <div className="cards">
-        <h3>Calculus 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Topics;

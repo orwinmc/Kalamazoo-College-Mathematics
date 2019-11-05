@@ -5,18 +5,15 @@
   position:fixed;
   left:250px;
   top:56px;
-  //transition: ease all .5s;
   padding:2em;
   overflow:scroll;
 
   background-color: white;
-  //background-image: url('./sidepanel2.jpg');
-  //background-size: cover;
   border-left: 1px solid rgba(0, 0, 0, .125);
-  background-color: #eeeef3;
+  //background-color: #eeeef3;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 780px) {
   .ContentRegion {
     transform: translateX(-200px);
     width:calc(100% - 50px);
