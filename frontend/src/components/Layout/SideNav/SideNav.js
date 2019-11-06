@@ -28,11 +28,6 @@ const options = {
   topics:
     [
       {text:"Topics", url:"/topics"},
-      {text:"Calculus I", url:"/topics/calculus_1"},
-      {text:"Calculus II", url:"/topics/calculus_2"},
-      {text:"Calculus III", url:"/topics/calculus_3"},
-      {text:"Linear Algebra", url:"/topics/linear_algebra"},
-      {text:"See More ...", url:"/topics"}
     ],
   professors:
     [
