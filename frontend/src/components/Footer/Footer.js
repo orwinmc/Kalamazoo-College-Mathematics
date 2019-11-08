@@ -2,10 +2,11 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './Footer.css';
 
 const Footer = () => {
   return (
-      <Container fluid>
+      <Container fluid id ="container">
           <Row>
               <Col>
                   <h5 className="title">Contact information</h5>
