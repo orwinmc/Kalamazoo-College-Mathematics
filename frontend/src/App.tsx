@@ -13,7 +13,6 @@ import Layout from './components/Layout/Layout'
 import Calendar from './components/Calendar/Calendar'
 import Topics from './components/Topics/Topics'
 import Subtopics from './components/Subtopics/Subtopics'
-import Footer from './components/Footer/Footer'
 
 const App: React.FC = () => {
   return (
