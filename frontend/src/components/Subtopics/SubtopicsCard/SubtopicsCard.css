@@ -2,14 +2,15 @@
   margin:2em;
 }
 
-.Card {
-  text-align: center;
+.SubtopicsCard {
+  text-align: justify;
   margin:0.5em;
+  width: 30%;
 
   border-radius: 0.25em;
   box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  float:left;
+  float:center;
 
   transition: 1s transform, 0.3s color;
 }
@@ -25,10 +26,12 @@
 }
 
 .title {
+  text-align: center;
   font-weight: 400;
 }
 
 .explore_wrapper {
+  text-align: center;
   height:5.75em;
   background: white;
 }
