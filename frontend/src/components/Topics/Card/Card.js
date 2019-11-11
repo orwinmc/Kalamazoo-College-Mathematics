@@ -19,7 +19,7 @@ const Card = (props) => {
         <p className="summary">{props.summary}</p>
       </div>
       <div className="explore_wrapper">
-        <button type="button" className="btn btn-primary explore_btn" onClick={() => { window.location.href=`./topics/${props.id}`}}>Explore</button> 
+        <button type="button" className="btn btn-primary explore_btn" onClick={() => { window.location.href=`./topics/${props.id}`}}>Explore</button>
       </div>
     </div>
   );

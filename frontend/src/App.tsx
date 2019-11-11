@@ -18,7 +18,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Route exact path="/" component={Home} />
-      <Route path="/home" component={() => <Layout><h1>Home</h1></Layout>} /> 
+      <Route path="/home" component={() => <Layout><h1>Home</h1></Layout>} />
       <Route path="/profile" component={() => <Layout><h1>Profile</h1></Layout>} />
       <Route path="/topics" component={() => <Layout><Topics /></Layout>} />
       <Route path="/topics/:topic" component={(props: any) => <Layout><Subtopics {...props}/></Layout>} />

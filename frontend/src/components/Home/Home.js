@@ -1,6 +1,6 @@
 import React from 'react';
 import HeadNav from '../Layout/HeadNav/HeadNav';
-import Footer from "../Footer/Footer';
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 const Home = () => {
