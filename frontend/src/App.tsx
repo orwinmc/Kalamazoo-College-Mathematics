@@ -13,6 +13,7 @@ import Layout from './components/Layout/Layout'
 import Calendar from './components/Calendar/Calendar'
 import Topics from './components/Topics/Topics'
 import Subtopics from './components/Subtopics/Subtopics'
+import Profs from './components/Profs/Profs'
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
       <Route path="/topics/:topic" component={(props: any) => <Layout><Subtopics {...props}/></Layout>} />
       <Route path="/professors" component={() => <Layout><h1>Professors</h1></Layout>} />
       <Route path="/calendar" component={() => <Layout><Calendar /></Layout>} />
+      <Route path="/profs" component={() => <Layout><Profs /></Layout>} />
     </Router>
   );
 }
