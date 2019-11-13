@@ -5,11 +5,12 @@
   border-radius: 0.25em;
   box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  float:left;
+  float:right;
 
   transition: 1s transform, 0.3s color;
 
-  width: calc(100% - 1em);
+  width: calc(70% - 1em);
+  border: 1px solid rgba(0,0,0,0.02);
 }
 
 .SubtopicsCard .caption {
