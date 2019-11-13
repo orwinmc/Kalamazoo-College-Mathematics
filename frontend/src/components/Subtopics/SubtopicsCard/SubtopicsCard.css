@@ -1,0 +1,41 @@
+.SubtopicsCard {
+  margin:0.5em;
+  padding:1.5em;
+
+  border-radius: 0.25em;
+  box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  float:right;
+
+  transition: 1s transform, 0.3s color;
+
+  width: calc(70% - 1em);
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.SubtopicsCard .caption {
+  width:100%;
+  float:left;
+}
+
+.SubtopicsCard .title {
+  font-weight: 400;
+}
+
+.SubtopicsCard .explore_wrapper {
+  text-align: center;
+  float:left;
+  width:100%;
+}
+
+.SubtopicsCard .explore_btn {
+  border-radius: 2em;
+  padding:0.4em 2em 0.4em 2em;
+  margin: 0.5em;
+}
+
+.SubtopicsCard .summary {
+  color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-align: justify;
+}

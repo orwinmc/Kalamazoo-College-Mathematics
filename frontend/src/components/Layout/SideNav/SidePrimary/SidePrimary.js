@@ -47,6 +47,8 @@ class SidePrimary extends Component {
           return (
             <SideSecondary key={index} text={option.text} url={option.url} />
           )
+        } else {
+          return null;
         }
       });
     }

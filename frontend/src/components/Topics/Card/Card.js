@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './Card.css';
-import Button from 'react-bootstrap/Button';
 
 const Card = (props) => {
   var banner_image = null;

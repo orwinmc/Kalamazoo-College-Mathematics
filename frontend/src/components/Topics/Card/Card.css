@@ -1,9 +1,4 @@
-.content {
-  margin:2em;
-}
-
 .Card {
-  text-align: left;
   margin:0.5em;
 
   border-radius: 0.25em;
@@ -14,31 +9,31 @@
   transition: 1s transform, 0.3s color;
 }
 
-.banner {
-  background-size:cover;
+.Card .banner {
+  background-size: cover;
   background-color: #444444;
 }
 
-.caption {
+.Card .caption {
   background: white;
   overflow: hidden;
 }
 
-.title {
+.Card .title {
   font-weight: 400;
 }
 
-.explore_wrapper {
+.Card .explore_wrapper {
   height:5.75em;
   background: white;
 }
 
-.explore_btn {
+.Card .explore_btn {
   border-radius: 2em;
   padding:0.4em 2em 0.4em 2em
 }
 
-.summary {
+.Card .summary {
   color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
@@ -49,12 +44,12 @@
     height:13.5em;
   }
 
-  .banner {
+  .Card .banner {
     width:2.5em;
     height:100%;
     float:left;
   }
-  .caption {
+  .Card .caption {
     width:100%;
     height:8.1em;
     width:calc(100% - 2.5em);
@@ -62,16 +57,16 @@
     float:left;
   }
 
-  .explore_wrapper {
+  .Card .explore_wrapper {
     padding: 1.5em 1.5em 1em 1.5em;
     float:left;
     width:calc(100% - 2.5em);
   }
 
-  .title {
+  .Card .title {
     font-size:17pt;
   }
-  .summary {
+  .Card .summary {
     font-size: 11pt;
   }
 }
@@ -82,17 +77,17 @@
     height:21em;
   }
 
-  .banner {
+  .Card .banner {
     height:5em;
     width:100%;
   }
 
-  .caption {
+  .Card .caption {
     height:10.25em;
     padding:1.75em 1.5em 0em 1.5em;
   }
 
-  .explore_wrapper {
+  .Card .explore_wrapper {
     width:100%;
     padding: 1.5em 1.5em 1.5em 1.5em;
   }
