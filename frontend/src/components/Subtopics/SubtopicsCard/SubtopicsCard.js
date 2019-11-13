@@ -1,14 +1,13 @@
 import React from 'react';
 
 import './SubtopicsCard.css';
-import Button from 'react-bootstrap/Button';
 
 const SubtopicsCard = (props) => {
-  var banner_image = null;
+  /*var banner_image = null;
 
   if (props.image != null) {
     banner_image = require(`../../../assets/imgs/${props.image}`);
-  }
+  }*/
 
   return (
     <div className="SubtopicsCard">

@@ -1,5 +1,6 @@
 .SubtopicsCard {
   margin:0.5em;
+  padding:1.5em;
 
   border-radius: 0.25em;
   box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 0.5);
@@ -9,17 +10,10 @@
   transition: 1s transform, 0.3s color;
 
   width: calc(100% - 1em);
-  height:13.5em;
 }
 
 .SubtopicsCard .caption {
-  background: white;
-  overflow: hidden;
-
   width:100%;
-  height:8.1em;
-  width:calc(100% - 2.5em);
-  padding:1.5em 1.75em 0em 1.5em;
   float:left;
 }
 
@@ -29,20 +23,18 @@
 
 .SubtopicsCard .explore_wrapper {
   text-align: center;
-  height:5.75em;
-  background: white;
-
-  padding: 1.5em 1.5em 1em 1.5em;
   float:left;
-  width:calc(100% - 2.5em);
+  width:100%;
 }
 
 .SubtopicsCard .explore_btn {
   border-radius: 2em;
-  padding:0.4em 2em 0.4em 2em
+  padding:0.4em 2em 0.4em 2em;
+  margin: 0.5em;
 }
 
 .SubtopicsCard .summary {
   color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  text-align: justify;
 }

@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import SubtopicsCard from './SubtopicsCard/SubtopicsCard';
-import Button from 'react-bootstrap/Button';
 import './Subtopics.css';
-
-
 
 class Subtopics extends Component {
   constructor(props) {
@@ -48,11 +45,12 @@ class Subtopics extends Component {
     })
 
     return (
-        <div className="Subtopics">
-          <h1>{this.state.topic.name}</h1>
-            {subtopic_cards}
-          </div>
-          );
-        }
-      }
+      <div className="Subtopics">
+        <h1>{this.state.topic.name}</h1>
+        {subtopic_cards}
+      </div>
+    );
+  }
+}
+
 export default Subtopics;
