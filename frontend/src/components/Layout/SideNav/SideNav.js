@@ -31,7 +31,7 @@ const options = {
     ],
   professors:
     [
-      {text:"Professors", url:"/professors"},
+      {text:"Professors", url:'/professors'},
       {text:"Dr. Intermont", url:"http://people.kzoo.edu/~intermon/"},
       {text:"Dr. Barth", url:"http://people.kzoo.edu/barth/"},
       {text:"Dr. Oloo", url:"http://people.kzoo.edu/soloo/"},
