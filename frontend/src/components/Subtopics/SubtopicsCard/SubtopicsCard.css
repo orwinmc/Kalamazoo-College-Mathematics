@@ -1,114 +1,48 @@
-.content {
-  margin:2em;
-}
-
 .SubtopicsCard {
-  text-align: justify;
   margin:0.5em;
-  width: 30%;
 
   border-radius: 0.25em;
   box-shadow: 2px 8px 12px -5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  float:center;
+  float:left;
 
   transition: 1s transform, 0.3s color;
+
+  width: calc(100% - 1em);
+  height:13.5em;
 }
 
-.SubtopicsCard.banner {
-  background-size:cover;
-  background-color: #444444;
-}
-
-.SubtopicsCard.caption {
+.SubtopicsCard .caption {
   background: white;
   overflow: hidden;
+
+  width:100%;
+  height:8.1em;
+  width:calc(100% - 2.5em);
+  padding:1.5em 1.75em 0em 1.5em;
+  float:left;
 }
 
-.SubtopicsCard.title {
-  //text-align: center;
+.SubtopicsCard .title {
   font-weight: 400;
 }
 
-.SubtopicsCard.explore_wrapper {
+.SubtopicsCard .explore_wrapper {
   text-align: center;
   height:5.75em;
   background: white;
+
+  padding: 1.5em 1.5em 1em 1.5em;
+  float:left;
+  width:calc(100% - 2.5em);
 }
 
-.SubtopicsCard.explore_btn {
+.SubtopicsCard .explore_btn {
   border-radius: 2em;
   padding:0.4em 2em 0.4em 2em
 }
 
-.SubtopicsCard.summary {
+.SubtopicsCard .summary {
   color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-}
-
-@media only screen and (max-width: 599px) {
-  .SubtopicsCard.Card {
-    width: calc(100% - 1em);
-    height:13.5em;
-  }
-
-  .SubtopicsCard.banner {
-    width:2.5em;
-    height:100%;
-    float:left;
-  }
-  .SubtopicsCard.caption {
-    width:100%;
-    height:8.1em;
-    width:calc(100% - 2.5em);
-    padding:1.5em 1.75em 0em 1.5em;
-    float:left;
-  }
-
-  .SubtopicsCard.explore_wrapper {
-    padding: 1.5em 1.5em 1em 1.5em;
-    float:left;
-    width:calc(100% - 2.5em);
-  }
-
-  .SubtopicsCard.title {
-    font-size:17pt;
-  }
-  .SubtopicsCard.summary {
-    font-size: 11pt;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .SubtopicsCard.Card {
-    width: calc(50% - 1em);
-    height:21em;
-  }
-
-  .SubtopicsCard.banner {
-    height:5em;
-    width:100%;
-  }
-
-  .SubtopicsCard.caption {
-    height:10.25em;
-    padding:1.75em 1.5em 0em 1.5em;
-  }
-
-  .SubtopicsCard.explore_wrapper {
-    width:100%;
-    padding: 1.5em 1.5em 1.5em 1.5em;
-  }
-}
-
-@media only screen and (min-width: 1080px) {
-  .SubtopicsCard.Card {
-    width: calc(33.3333% - 1em);
-  }
-}
-
-@media only screen and (min-width: 1380px) {
-  .SubtopicsCard.Card {
-    width: calc(25% - 1em);
-  }
 }

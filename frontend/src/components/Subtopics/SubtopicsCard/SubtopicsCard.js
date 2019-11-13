@@ -17,8 +17,8 @@ const SubtopicsCard = (props) => {
         <p className="summary">{props.summary}</p>
       </div>
       <div className="explore_wrapper">
-      <Button variant="primary" style={{ margin:"0.5em" }}>Resources</Button>
-      <Button variant="primary" style={{ margin:"0.5em" }}>Problems</Button>
+        <button type="button" className="btn btn-primary explore_btn">Resources</button>
+        <button type="button" className="btn btn-primary explore_btn">Problems</button>
       </div>
     </div>
   );
