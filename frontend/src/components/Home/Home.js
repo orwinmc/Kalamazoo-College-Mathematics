@@ -1,6 +1,6 @@
 import React from 'react';
 import HeadNav from '../Layout/HeadNav/HeadNav';
-
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
         <h5 id="quote">The beauty of mathematics only shows itself to more patient followers.</h5>
         <h6 id="author"> - Maryam Mirzakhani</h6>
       </div>
+      <Footer />
     </div>
   );
 }

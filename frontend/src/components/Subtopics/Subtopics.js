@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-
-//import './test.css';
+import SubtopicsCard from './SubtopicsCard/SubtopicsCard';
+import './Subtopics.css';
 
 class Subtopics extends Component {
   constructor(props) {
@@ -40,19 +38,9 @@ class Subtopics extends Component {
   }
 
   render() {
-    const subtopic_cards = this.state.subtopics.map((subtopic, index) => {
+    const subtopic_cards = this.state.subtopics.map((subtopics, index) => {
       return (
-        <Card className="hoveraction" key={subtopic.id} style={{ float:'left', width: '22rem', margin:'1em'}}>
-          <Card.Body>
-            <Card.Title>{subtopic.id}</Card.Title>
-            <Card.Title>{subtopic.name}</Card.Title>
-            <Card.Text>
-              {subtopic.summary}
-            </Card.Text>
-            <Button href={"http://localhost:3000/topics/" + this.props.match.params.topic + "/" + subtopic.id + "/resources"} variant="primary" style={{ margin:"0.5em" }}>Resources</Button>
-            <Button variant="primary" style={{ margin:"0.5em" }}>Problems</Button>
-          </Card.Body>
-        </Card>
+        <SubtopicsCard key={subtopics.id} id={subtopics.id} image={subtopics.image} name={subtopics.name} summary={subtopics.summary}/>
       );
     })
 

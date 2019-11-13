@@ -14,7 +14,7 @@ class HeadNav extends Component {
 
   render() {
     return (
-      <Navbar variant="dark" className="HeadNav">
+      <Navbar fixed variant="dark" className="HeadNav">
         <Navbar.Brand href="/">Kalamazoo College Mathematics</Navbar.Brand>
         <Nav className="ml-auto">
           <Nav.Link href="/home">Login</Nav.Link>

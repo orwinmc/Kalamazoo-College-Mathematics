@@ -14,3 +14,10 @@ font-weight: 300;
 #quote {
   font-weight: 300;
 }
+
+.column {
+  float: left;
+  width: 27%;
+  height: 300px;
+  background-color: orange;
+}
