@@ -10,7 +10,7 @@
 
   background-color: white;
   border-left: 1px solid rgba(0, 0, 0, .125);
-  //background-color: #eeeef3;
+  //background-color: rgba(245, 248, 255, 1);
 }
 
 @media only screen and (max-width: 780px) {
