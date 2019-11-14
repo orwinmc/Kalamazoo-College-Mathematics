@@ -1,3 +1,4 @@
+import ReactDOM from 'react-dom';
 import React, {Component} from 'react';
 
 import './Topics.css';
@@ -7,10 +8,14 @@ import Form from 'react-bootstrap/Form';
 class Topics extends Component {
   constructor(props) {
     super(props);
+    this.cards = [];
 
     this.state = {
-      topics: []
+      topics: [],
+      searchText: ""
     }
+
+    this.searchChange = this.searchChange.bind(this);
   }
 
   async componentDidMount() {
@@ -21,13 +26,27 @@ class Topics extends Component {
     this.setState({
       topics: all_topics_data
     })
+
+    for (let i = 0; i<this.cards.length; i++) {
+      var card = ReactDOM.findDOMNode(this.cards[i]);
+      card.style.animationDelay = `${i/8.0}s`;
+    }
+  }
+
+  searchChange(event) {
+    this.setState({
+      searchText: event.target.value
+    })
   }
 
   render() {
-    const topic_cards = this.state.topics.map((topic, index) => {
+    let topic_cards = this.state.topics.filter((topic, index) => {
+      return topic.name.toLowerCase().includes(this.state.searchText.toLowerCase());
+    });
 
+    topic_cards = topic_cards.map((topic, index) => {
       return (
-        <Card key={topic.id} id={topic.id} image={topic.image} name={topic.name} summary={topic.summary}/>
+        <Card ref={(ref) => this.cards[index] = ref} key={topic.id} id={topic.id} image={topic.image} name={topic.name} summary={topic.summary}/>
       );
     })
 
@@ -35,7 +54,7 @@ class Topics extends Component {
       <div className="Topics">
         <h1>All Topics</h1>
         <br />
-        <Form.Control size="lg" type="text" placeholder="Search for a Topic" />
+        <Form.Control size="lg" type="text" placeholder="Search for a Topic" onChange={this.searchChange}/>
         <br />
         {topic_cards}
       </div>
