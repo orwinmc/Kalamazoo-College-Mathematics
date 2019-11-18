@@ -11,29 +11,33 @@ import {Redirect } from 'react-router-dom';
 class HeadNav extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      modalVisible: false
+    }
+  }
+
+  modalShow() {
+    this.setState({
+      modalVisible: true
+    });
+  }
+
+  modalHide() {
+    this.setState({
+      modalVisible: false
+    });
   }
 
   render() {
-
-    let addModalClose = () => this.setState({ addModalShow: false })
-
     return (
       <Navbar fixed variant="dark" className="HeadNav">
         <Navbar.Brand href="/">Kalamazoo College Mathematics</Navbar.Brand>
         <Nav className="ml-auto">
           {/* <Nav.Link href="/home">Login</Nav.Link> */}
           <ButtonToolbar>
-            <Button 
-            variant ='primary' 
-            onClink={()=> <Redirect to='/demo' />}
-            >Log In
-            </Button>
-
-            <Demo 
-              show={this.state.addModalShow}
-              onHide={addModalClose}
-            />
-
+            <Button variant ='primary' onClick={() => this.modalShow}> Log In </Button>
+            <Demo visible={this.state.modalVisible} closeModal={() => this.modalHide} />
           </ButtonToolbar>
         </Nav>
       </Navbar>
