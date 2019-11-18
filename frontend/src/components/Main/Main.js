@@ -1,11 +1,11 @@
 import React from 'react';
 import HeadNav from '../Layout/HeadNav/HeadNav';
 import Footer from '../Footer/Footer';
-import './Home.css';
+import './Main.css';
 
-const Home = () => {
+const Main = () => {
   return (
-    <div className="Home">
+    <div className="Main">
       <HeadNav />
       <div id="headline">
         <br />
@@ -24,4 +24,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Main;

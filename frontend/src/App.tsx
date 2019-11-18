@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 // Custom Components
-import Home from './components/Home/Home'
+import Main from './components/Main/Main'
 import Layout from './components/Layout/Layout'
 import Calendar from './components/Calendar/Calendar'
 import Topics from './components/Topics/Topics'
@@ -18,7 +18,7 @@ import Profs from './components/Profs/Profs'
 const App: React.FC = () => {
   return (
     <Router>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Main} />
       <Route path="/home" component={() => <Layout><h1>Home</h1></Layout>} />
       <Route path="/profile" component={() => <Layout><h1>Profile</h1></Layout>} />
       <Route path="/topics" component={() => <Layout><Topics /></Layout>} />

@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './HeadNav.css'
 //import LoginModal from './LoginModal/LoginModal';
-import Demo from './LoginModal/demo';
+import LoginModal from './LoginModal/LoginModal';
 import Button from 'react-bootstrap/Button';
 
 class HeadNav extends Component {
@@ -34,7 +34,7 @@ class HeadNav extends Component {
         <Navbar.Brand href="/">Kalamazoo College Mathematics</Navbar.Brand>
         <Nav className="ml-auto">
           <Button variant ='primary' onClick={() => this.showModal()}> Log In </Button>
-          <Demo visible={this.state.modalVisible} closeModal={() => this.hideModal()} />
+          <LoginModal visible={this.state.modalVisible} closeModal={() => this.hideModal()} />
         </Nav>
       </Navbar>
     );
