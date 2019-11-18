@@ -5,8 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './HeadNav.css'
 //import LoginModal from './LoginModal/LoginModal';
 import Demo from './LoginModal/demo';
-import {Button, ButtonToolbar} from 'react-bootstrap';
-import {Redirect } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 class HeadNav extends Component {
   constructor(props) {
@@ -17,13 +16,13 @@ class HeadNav extends Component {
     }
   }
 
-  modalShow() {
+  showModal() {
     this.setState({
       modalVisible: true
     });
   }
 
-  modalHide() {
+  hideModal() {
     this.setState({
       modalVisible: false
     });
@@ -34,11 +33,8 @@ class HeadNav extends Component {
       <Navbar fixed variant="dark" className="HeadNav">
         <Navbar.Brand href="/">Kalamazoo College Mathematics</Navbar.Brand>
         <Nav className="ml-auto">
-          {/* <Nav.Link href="/home">Login</Nav.Link> */}
-          <ButtonToolbar>
-            <Button variant ='primary' onClick={() => this.modalShow}> Log In </Button>
-            <Demo visible={this.state.modalVisible} closeModal={() => this.modalHide} />
-          </ButtonToolbar>
+          <Button variant ='primary' onClick={() => this.showModal()}> Log In </Button>
+          <Demo visible={this.state.modalVisible} closeModal={() => this.hideModal()} />
         </Nav>
       </Navbar>
     );
