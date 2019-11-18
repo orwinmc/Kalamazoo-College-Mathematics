@@ -33,7 +33,7 @@ class HeadNav extends Component {
       <Navbar fixed variant="dark" className="HeadNav">
         <Navbar.Brand href="/">Kalamazoo College Mathematics</Navbar.Brand>
         <Nav className="ml-auto">
-          <Button variant ='primary' onClick={() => this.showModal()}> Log In </Button>
+          <Nav.Link onClick={() => this.showModal()}> Log In </Nav.Link>
           <LoginModal visible={this.state.modalVisible} closeModal={() => this.hideModal()} />
         </Nav>
       </Navbar>
