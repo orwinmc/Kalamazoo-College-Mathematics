@@ -11,6 +11,10 @@ import {Redirect } from 'react-router-dom';
 class HeadNav extends Component {
   constructor(props) {
     super(props);
+    
+    this.state = {
+      addModalShow = false
+    }
   }
 
   render() {
